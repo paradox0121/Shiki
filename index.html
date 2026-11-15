@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shiki: Zen Snake Garden</title>
+<meta name="description" content="Shiki is a calm snake game in a raked sand garden, through four seasons and the moon. Fifty gardens, an endless garden, and seasonal events.">
+<link rel="icon" href="icon.png">
+<style>
+:root{--paper:#f4efe6;--ink:#211c17;--soft:#6b6157;--seal:#b3362b;--line:#e2d9cb}
+@media (prefers-color-scheme:dark){:root{--paper:#17140f;--ink:#efe7da;--soft:#a99d8e;--line:#2d2720}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 Georgia,"Times New Roman",serif}
+main{max-width:980px;margin:0 auto;padding:56px 20px 40px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.icon{width:96px;height:96px;border-radius:22px;box-shadow:0 8px 24px rgba(0,0,0,.15)}
+.kanji{font-size:20px;letter-spacing:.3em;color:var(--seal);margin:22px 0 4px}
+h1{font-weight:400;font-size:44px;line-height:1.1;margin:0 0 12px}
+.lede{font-size:20px;color:var(--soft);margin:0 0 24px;max-width:30em}
+.stores{display:flex;flex-wrap:wrap;gap:12px}
+.store{display:inline-block;padding:12px 20px;border:1px solid var(--ink);border-radius:10px;color:var(--ink);text-decoration:none;font-size:16px}
+.store:hover{background:var(--ink);color:var(--paper)}
+.shots{display:flex;gap:16px;justify-content:center}
+.shots img{width:46%;max-width:210px;border-radius:18px;box-shadow:0 12px 32px rgba(0,0,0,.18)}
+.shots img:nth-child(2){margin-top:40px}
+ul.feat{list-style:none;padding:0;margin:48px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 32px;border-top:1px solid var(--line);padding-top:28px}
+ul.feat li{padding-left:22px;position:relative}
+ul.feat li:before{content:"";position:absolute;left:0;top:.7em;width:8px;height:8px;border-radius:50%;background:var(--seal)}
+footer{max-width:980px;margin:0 auto;padding:24px 20px 48px;color:var(--soft);font-size:15px;display:flex;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line)}
+footer a{color:var(--soft)}
+@media (max-width:760px){.hero{grid-template-columns:1fr}h1{font-size:36px}ul.feat{grid-template-columns:1fr}main{padding-top:36px}}
+</style></head><body>
+<main>
+  <div class="hero">
+    <div>
+      <img class="icon" src="icon.png" alt="Shiki app icon: an ink snake curled into a circle">
+      <p class="kanji">四季</p>
+      <h1>Shiki: Zen Snake Garden</h1>
+      <p class="lede">Guide a quiet snake through a raked sand garden. Gather blossoms, leave a gentle path, and travel through spring, summer, autumn, winter and the moon.</p>
+      <div class="stores">
+        <!-- Replace # with your App Store and Google Play links once Shiki is live -->
+        <a class="store" href="#">Download on the App Store</a>
+        <a class="store" href="#">Get it on Google Play</a>
+      </div>
+    </div>
+    <div class="shots">
+      <img src="screen-spring.jpg" alt="A spring garden with a snake winding between raked stones">
+      <img src="screen-holy-night.jpg" alt="The Holy Night title screen in a snowy garden">
+    </div>
+  </div>
+  <ul class="feat">
+    <li>Fifty hand-made gardens across four seasons and the moon</li>
+    <li>An endless garden for when you just want to wander</li>
+    <li>Calm music and nature sounds made for headphones</li>
+    <li>Seasonal events: Pumpkin Night in October, Holy Night in December</li>
+    <li>Robes, hats, trails and frames to collect, all earnable in play</li>
+    <li>Game Center leaderboard and achievements on iPhone</li>
+  </ul>
+</main>
+<footer>
+  <span>© 2026 Greendox Games</span>
+  <a href="support.html">Support</a>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="../">More games</a>
+</footer>
+</body></html>
